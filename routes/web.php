@@ -28,7 +28,7 @@ Route::get('/home', HomeController::class);
 Route::get('/login', [LoginController::class, 'index'])->name('login');
 
 
-
+Route::post('/login', [LoginController::class, 'handleLogin'])->name('login.submit');
 
 /** Route Grouping */
 /** prefix can easily to modify the route name let say customer change to user. */
